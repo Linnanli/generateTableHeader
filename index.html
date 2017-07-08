@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>generateTableHeader</title>
+    <script src="js/generateTableHeader.js"></script>
+</head>
+<style>
+    table {}
+
+    table,
+    th,
+    td {
+        border: 1px solid #000;
+    }
+</style>
+
+<body>
+    <table>
+        <thead id="thead"></thead>
+        <tbody>
+            <tr>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+            </tr>
+             <tr>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+            </tr>
+             <tr>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+            </tr>
+             <tr>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+                <td>111</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    var headerData = [
+        {
+            title: '区域',
+            name: 'test1',
+            width: null,
+            height: null,
+            childNode: []
+        }, {
+            title: '智慧物联网网关',
+            childNode: [{
+                title: '固定无线网关',
+                childNode: [{
+                    title: '在线',
+                    name: 'test2',
+                    width: null,
+                    height: null
+                }, {
+                    title: '离线',
+                    name: 'test3',
+                    width: null,
+                    height: null
+                }, {
+                    title: '维修',
+                    name: 'test4',
+                    width: null,
+                    height: null
+                }, {
+                    title: '挂起',
+                    name: 'test5',
+                    width: null,
+                    height: null
+                }, {
+                    title: '在线率',
+                    name: 'test6',
+                    width: null,
+                    height: null
+                }, {
+                    title: '总数',
+                    name: 'test7',
+                    width: null,
+                    height: null
+                }]
+            }, {
+                title: '稽查网关',
+                childNode: [{
+                    title: '岗亭',
+                    name: 'test2',
+                    width: null,
+                    height: null
+                }, {
+                    title: '离线',
+                    name: 'test2',
+                    width: null,
+                    height: null
+                }, {
+                    title: '总数',
+                    name: 'test2',
+                    width: null,
+                    height: null
+                }]
+            }]
+        }, {
+            title: '登记车辆',
+            childNode: [{
+                title: '昨日安装量',
+                name: 'test2',
+                width: null,
+                height: null
+            }, {
+                title: '今日安装量',
+                name: 'test2',
+                width: null,
+                height: null
+            }, {
+                title: '总数',
+                name: 'test2',
+                width: null,
+                height: null
+            }]
+        }, {
+            title: '登记点',
+            childNode: [{
+                title: '登记点数量',
+                name: 'test2',
+                width: null,
+                height: null
+            }, {
+                title: '销售商数量',
+                name: 'test2',
+                width: null,
+                height: null
+            }]
+        }];
+    var thead = document.getElementById('thead');
+    var domStr = generateTableHeader.generate(headerData);
+    thead.innerHTML = domStr;
+
+</script>
+
+</html>
