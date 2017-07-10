@@ -40,6 +40,8 @@ var generateTableHeader = {
 	},
 	parse:function(data){
 		var self = this;
+		//每次初始化都清空表头数组
+		this.resultData = [];
 		//node表示数据节点,表格头结构深度depth,markStr表示数据当前在数据中的坐标
 		(function setNodeParams(node){
 			for(var i = 0;i<node.length;i++){
