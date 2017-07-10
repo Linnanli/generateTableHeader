@@ -4,6 +4,8 @@
 
   依靠解析数据格式设置单元格所占行和列，对表头进行排版。
 
+  [查看DEMO]( https://linnanli.github.io/generateTableHeader/)
+
   # generateTableHeader遵循的数据格式
 
   以下是我测试使用的数据格式：
